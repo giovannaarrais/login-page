@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { DefaultLoginLayoutComponent } from '../../components/default-login-layout/default-login-layout.component';
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { PrimaryInputComponent } from '../../components/primary-input/primary-input.component';
 
 
 @Component({
   selector: 'app-login',
   standalone: true,
   imports: [
-    DefaultLoginLayoutComponent, ReactiveFormsModule
+    DefaultLoginLayoutComponent, ReactiveFormsModule, PrimaryInputComponent
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
@@ -17,7 +18,12 @@ export class LoginComponent {
   loginForm!: FormGroup;
 
   constructor() {
+    this.loginForm = new FormGroup({
+      //            comeca com uma string('') vazia com validacao obrigatória e validacao de email que vem das importacoes acima
+      email: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', [Validators.required, Validators.minLength(6)]),
 
+    })
   }
 
 }
