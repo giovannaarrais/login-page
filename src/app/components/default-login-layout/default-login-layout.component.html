@@ -1,21 +1,28 @@
-<main>
-    <section>
+<main class="d-flex flex-row align-items-center justify-content-center">
+
+    <section class="form-section d-flex flex-column align-items-center justify-content-center">
         <img src="assets/svg/logo.svg" alt="">
-        <h2></h2>
-        <!-- <h2>Login into your account</h2> -->
-        <!-- <h2>Sign in and start today!</h2> -->
+        <h2 class="fw-bold">{{ title }}</h2>
+        
+        <ng-content></ng-content>
 
-        <button></button>
-
-        <div>
-            <span>or</span>
+        <div class="btn-wrapper d-flex flex-column align-items-center justify-content-center w-100">
+            <button class="button-primary">{{primaryBtnText}}</button>
+    
+            <div class="divider d-flex flex-row align-items-center justify-content-center">
+                <div></div>
+                <span>or</span>
+                <div></div>
+            </div>
+            
+            <button class="button-secondary">{{secondaryBtnText}}</button>
         </div>
-
-        <button></button>
     </section>
 
-    <section>
+    <section class="main-section d-flex flex-column align-items-center justify-content-center">
         <h1>You Should, MoveIt!</h1>
+
         <img src="assets/svg/main-illustration.svg" alt="">
     </section>
+
 </main>
