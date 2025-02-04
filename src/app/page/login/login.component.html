@@ -5,6 +5,7 @@
 >
     <form [formGroup]="loginForm">
         <app-primary-input
+            [formGroup]="loginForm"
             formName="email"
             type="email"
             label="Email"
@@ -14,6 +15,7 @@
         </app-primary-input>
 
         <app-primary-input
+            [formGroup]="loginForm"
             formName="password"
             type="password"
             label="Your password"

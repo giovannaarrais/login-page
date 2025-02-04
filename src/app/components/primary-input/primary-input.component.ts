@@ -1,5 +1,5 @@
 import { Component, Input, input } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormGroup } from '@angular/forms';
 
 type InputTypes = "text" | "email" | "password";
 
@@ -11,6 +11,7 @@ type InputTypes = "text" | "email" | "password";
   styleUrl: './primary-input.component.scss'
 })
 export class PrimaryInputComponent {
+  @Input() formGroup!: FormGroup;
   @Input() type: InputTypes = "text";
   @Input() formName: string = "";
   @Input() placeholder: string = "";
