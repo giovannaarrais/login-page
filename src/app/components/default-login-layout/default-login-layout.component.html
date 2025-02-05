@@ -7,7 +7,7 @@
         <ng-content></ng-content>
 
         <div class="btn-wrapper d-flex flex-column align-items-center justify-content-center w-100">
-            <button class="button-primary">{{primaryBtnText}}</button>
+            <button class="button-primary" (click)="submit()">{{primaryBtnText}}</button>
     
             <div class="divider d-flex flex-row align-items-center justify-content-center">
                 <div></div>
@@ -15,7 +15,7 @@
                 <div></div>
             </div>
             
-            <button class="button-secondary">{{secondaryBtnText}}</button>
+            <button class="button-secondary" (click)="navigate()">{{secondaryBtnText}}</button>
         </div>
     </section>
 
