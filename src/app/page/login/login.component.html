@@ -5,8 +5,8 @@
 >
     <form [formGroup]="loginForm">
         <app-primary-input
-            [formGroup]="loginForm"
-            formName="email"
+            formControlName="email"
+            inputName="email"
             type="email"
             label="Email"
             placeholder="johndoe@gmail.com"
@@ -15,8 +15,8 @@
         </app-primary-input>
 
         <app-primary-input
-            [formGroup]="loginForm"
-            formName="password"
+            formControlName="password"
+            inputName="password"
             type="password"
             label="Your password"
         >
