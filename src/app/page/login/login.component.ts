@@ -10,7 +10,7 @@ import { LoginService } from '../../services/login.service';
   selector: 'app-login',
   standalone: true,
   imports: [
-    DefaultLoginLayoutComponent, ReactiveFormsModule, PrimaryInputComponent, Router
+    DefaultLoginLayoutComponent, ReactiveFormsModule, PrimaryInputComponent
   ],
   providers: [
     LoginService
