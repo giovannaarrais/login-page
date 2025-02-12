@@ -4,6 +4,7 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { PrimaryInputComponent } from '../../components/primary-input/primary-input.component';
 import { Router} from '@angular/router';
 import { LoginService } from '../../services/login.service';
+import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
@@ -24,7 +25,8 @@ export class LoginComponent {
 
   constructor (
     private router: Router,
-    private loginService: LoginService
+    private loginService: LoginService,
+    private toastService: ToastrService
   ) {
     this.loginForm = new FormGroup({
       //            comeca com uma string('') vazia com validacao obrigatória e validacao de email que vem das importacoes acima
@@ -36,8 +38,8 @@ export class LoginComponent {
 
   submit(){
     this.loginService.login(this.loginForm.value.email, this.loginForm.value.password).subscribe({
-      next: () => { console.log("sucesso") },
-      error: () => { console.log("deu ruim") }
+      next: () => this.toastService.success("Login realizado com sucesso"),
+      error: () => this.toastService.error("Erro Inesperado. Tente novamente mais tarde")
     })
   }
 
