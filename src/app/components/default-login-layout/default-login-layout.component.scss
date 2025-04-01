@@ -81,7 +81,7 @@ main{
     .main-section{
         gap: 8px;
         flex-grow: 1;
-        background-color: $gray-bg;
+        background-color: #c2c2c240;
         @media screen and (max-width: 767px) {
             width: 100%;
             padding: 2rem 0;
