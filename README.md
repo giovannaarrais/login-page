@@ -1,27 +1,28 @@
-# LoginPage
+## 📌 Projeto: Login Page em Angular 17
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+Este projeto foi desenvolvido com Angular 17, seguindo a abordagem de componentes reutilizáveis, troca dinâmica de informações e interface responsiva. O objetivo principal foi criar uma página de login eficiente e modular, garantindo flexibilidade e adaptabilidade para diferentes dispositivos.
 
-## Development server
+### 🚀 Tecnologias Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<ul>
+  <li>Angular 17</li>
+  <li>TypeScript</li>
+  <li>SCSS</li>
+  <li>Bootstrap</li>
+</ul>
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 🛠️ Funcionalidades e Conceitos Aplicados
 
-## Build
+♻️ Reutilização de Componentes
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+🔄 Troca Dinâmica de Informações
 
-## Running unit tests
+📱 Interface Responsiva
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### 👥 Créditos
 
-## Running end-to-end tests
+Projeto baseado na aula "PROJETO FULLSTACK APP DE LOGIN ANGULAR 17 + JAVA SPRING | FRONTEND" da Fernanda Kipper.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Se tiver alguma sugestão ou dúvida, sinta-se à vontade para contribuir ou entrar em contato! 🚀
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
